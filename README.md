@@ -79,9 +79,8 @@
     <h2>Contato</h2>
     <ul>
         <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
-        <li><a href="https://github.com/AnaAlicepb/servidor_estatico" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Acesse o Projeto no GitHub"> clique para acessar o projeto</a></li>
     </ul>
-    <p>Este projeto está hospedado na Vercel. Para acessá-lo, clique no botão acima.</p>
+    
 </section>
 
 </body>
