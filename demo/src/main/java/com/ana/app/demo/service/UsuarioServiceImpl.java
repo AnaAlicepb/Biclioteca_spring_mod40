@@ -2,6 +2,7 @@ package com.ana.app.demo.service;
 
 import com.ana.app.demo.model.Usuario;
 
+
 import com.ana.app.demo.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,10 +26,8 @@ public class UsuarioServiceImpl implements UsuarioService {
     }
     
     @Override
-    public Usuario salvarUsuario(Usuario usuario) {
-        // Implementação para registrar um novo usuário
-        
-        return usuarioRepository.save(usuario);
+    public Usuario salvarUsuario(Usuario usuario) {      
+          return usuarioRepository.save(usuario);
     }
     
     @Override
