@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recuperação de Senha</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: #ecf0f1;">
+    <div class="container d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+        <div style="background-color: #2c3e50; color: white; padding: 2rem; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 100%; max-width: 400px;">
+            <h1 class="mb-4 text-center">Recuperação de Senha</h1>
+            <form action="/enviar-senha" method="post">
+                <div class="form-group">
+                    <label for="email">Digite seu e-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar nova senha</button>
+            </form>
+            <a href="/" class="btn btn-secondary btn-block mt-3">Voltar para a página inicial</a>
+            
+            <!-- Exibir mensagem de erro, se houver -->
+            <div th:if="${error}" class="alert alert-danger mt-3" role="alert">
+                <span th:text="${error}"></span>
+            </div>
+            <!-- Exibir senha, se recuperada -->
+            <div th:if="${senha}" class="alert alert-success mt-3" role="alert">
+                <span th:text="${senha}"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
